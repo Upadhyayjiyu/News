@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global News Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">🌍 Global News</div>
+    <nav>
+      <ul>
+        <li><a href="#top">Top</a></li>
+        <li><a href="#sports">Sports</a></li>
+        <li><a href="#tech">Technology</a></li>
+        <li><a href="#entertainment">Entertainment</a></li>
+        <li><a href="#trending">Trending</a></li>
+      </ul>
+    </nav>
+    <button id="darkModeToggle">🌙</button>
+  </header>
+
+  <!-- Hero Breaking News -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Breaking News: Major Global Event Unfolds</h1>
+      <p>Stay updated with the latest news across the globe in real-time.</p>
+      <button>Read Full Story</button>
+    </div>
+  </section>
+
+  <!-- Search & Categories -->
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search news...">
+    <button onclick="searchNews()">🔍 Search</button>
+  </section>
+
+  <!-- Layout -->
+  <main class="main-layout">
+    <div class="content">
+      <!-- Sports -->
+      <section id="sports">
+        <h2>🏆 Sports</h2>
+        <div class="news-container" id="sports-news"></div>
+      </section>
+
+      <!-- Technology -->
+      <section id="tech">
+        <h2>💻 Technology</h2>
+        <div class="news-container" id="tech-news"></div>
+      </section>
+
+      <!-- Entertainment -->
+      <section id="entertainment">
+        <h2>🎬 Entertainment</h2>
+        <div class="news-container" id="ent-news"></div>
+      </section>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>🔥 Trending Now</h3>
+      <div id="trending-news"></div>
+
+      <h3>📊 Most Read</h3>
+      <ul id="most-read">
+        <li><a href="#">AI Takes Over Workflows</a></li>
+        <li><a href="#">Olympics Final Results</a></li>
+        <li><a href="#">SpaceX Launch Success</a></li>
+        <li><a href="#">Top Movies 2025</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>Subscribe for Daily Updates</h2>
+    <input type="email" placeholder="Enter your email">
+    <button>Subscribe</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Global News Portal. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
